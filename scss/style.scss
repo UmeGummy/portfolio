@@ -1,0 +1,189 @@
+@use "reset";
+@use "variables" as *;
+@use "common";
+
+.page-wrap{
+    display: flex;
+}
+
+.main-visual{
+    background: url(../img/amy-hirschi-szrJ3wjzOMg-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: calc(100vw - 170px);
+    margin-bottom: 202px;
+}
+
+.header{
+    background-color:$main;
+    color: $lightgray;
+    height: 100vh;
+    width: 170px;
+    padding: 203px 0 244px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+
+    &-nav{
+        &__link{
+            text-align: center;
+            margin-bottom: 32px;
+
+            &:last-child{
+                margin: 76px 0 23px;
+            }
+        }
+    }
+}
+
+.sns-link{
+    display: flex;
+    margin: 0 auto 0 25px;
+    
+    
+    &__icon{
+        background-color: $main;
+        color: $lightgray;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        box-shadow: 0 2.5px 1.25px 1.25px $blue;
+        margin: 0 6.5px 0 ;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+
+.section-headline{
+    &__sub{
+        color: $gray;
+        font-weight: medium;
+        margin-bottom: 8px;
+    }
+
+    &__sub-main{
+        color: #406FA9;
+        font-weight: medium;
+    }
+
+
+    &__main{
+        color: $blue;
+        font-weight: regular;
+        padding: 80px 0 0 150px;
+    }  
+}
+
+.web{
+    .section-headline{
+        text-align: center;
+    }
+
+    &-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 54px;
+    }
+
+    &-content{
+        width: 50%;
+        &__img{
+            width: 100%;
+        }
+    }
+}
+.skills{
+    .section-headline{
+        text-align: center;
+    }
+
+    &-wrap{
+        width: calc(100vw - 278px);
+        margin: 54px 54px  0 54px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 36px;
+    }
+
+    &-content{
+        &__img{
+            height: 200px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        &__title{
+            font-family: $zen;
+            font-weight: medium;
+            margin: 8px 0;
+        }
+
+        &__description{
+            font-family: $zen;
+        }
+    }
+}
+
+.works{
+    max-width: 1080px;
+    &1{
+        position: relative;
+        height: 450px;
+        
+        &__img{
+            position: absolute;
+            top: -300px;
+            right: 120px;
+            width: 680px;
+            height: 390px;
+            z-index: -1;
+
+        }
+        &-wrap{
+            background-color: $sub;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 360px;
+            width: 920px;
+            margin: -500px 0 0 170px;
+            z-index: 1;
+        }
+        
+
+        
+        &__headline{
+            color: $gray;
+            font-weight:medium;
+        }
+        &__text{
+            color: $main;
+            font-family: $zen;
+            line-height: 30px;
+        }
+    }
+}
+
+.footer{
+    background-color: $sub;
+    color: $blue;
+    padding-top: 96px;
+    padding-bottom: 72px;
+    text-align: center;
+    
+    .information{
+        margin: 54px 0 80px;
+    }
+}

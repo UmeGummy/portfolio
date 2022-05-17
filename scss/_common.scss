@@ -1,0 +1,31 @@
+@use "variables"as *;
+
+body {
+    color: $gray;
+    font-family: $zen;
+}
+
+h2 {
+    font-size: 58px;   
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+p{
+    font-size: 16px;
+}
+
+span{
+    display: inline-block;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
